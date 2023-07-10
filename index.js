@@ -1,33 +1,41 @@
-import express from 'express'
-import dotenv from 'dotenv'
-import cors from 'cors'
-import mongoose from 'mongoose'
-import projectsRouter from './routes/projects.js'
-import categoriesRouter from './routes/categories.js'
-import technologiesRouter from './routes/technologies.js'
-import userRouter from './routes/auth.js'
-import infoRouter from './routes/info.js'
-import {connectOnlDB} from './config/connect.js'
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import mongoose from "mongoose";
+
+import { connectOnlDB } from "./config/connect.js";
+import {
+  categoriesRouter,
+  externalRouter,
+  infoRouter,
+  projectsRouter,
+  socialRouter,
+  technologiesRouter,
+  userRouter,
+} from "./routes/index.js";
 
 const app = express();
-const port = 8080
+const port = 8080;
 dotenv.config();
 
 app.use(express.json());
 app.use(cors());
 
-app.use("/api", projectsRouter);
-app.use("/api", categoriesRouter);
-app.use("/api", technologiesRouter);
-app.use("/api", userRouter);
-app.use("/api", infoRouter);
+app.use("/api",
+    projectsRouter,
+    categoriesRouter,
+    technologiesRouter,
+    userRouter,
+    infoRouter,
+    socialRouter,
+    externalRouter
+);
 
-mongoose.set('strictQuery', false);
-// mongodb local
-// connectLocalDB();
+mongoose.set("strictQuery", false);
 
-// mongodb onl
+// connect mongodb onl
 connectOnlDB();
+
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
-})
+  console.log(`Server listening on port ${port}`);
+});
