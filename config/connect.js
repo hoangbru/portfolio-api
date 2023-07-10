@@ -15,7 +15,7 @@ export const connectLocalDB = () => {
 };
 
 export const connectOnlDB = () => {
-  const mongoAtlasUri = process.env.MONGO_ATLAT_URI;
+  const mongoAtlasUri = process.env.MONGO_ATLAT_URL;
 
   try {
     // Connect to the MongoDB cluster
