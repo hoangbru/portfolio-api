@@ -7,7 +7,9 @@ const technologySchema = mongoose.Schema({
     },
     tag: {
         type: String,
-        required: true,
+    },
+    image: {
+        typeof: String,
     },
     projects: [{
         type: mongoose.Types.ObjectId,

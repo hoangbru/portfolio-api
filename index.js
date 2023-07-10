@@ -6,6 +6,7 @@ import projectsRouter from './routes/projects.js'
 import categoriesRouter from './routes/categories.js'
 import technologiesRouter from './routes/technologies.js'
 import userRouter from './routes/auth.js'
+import infoRouter from './routes/info.js'
 import {connectOnlDB} from './config/connect.js'
 
 const app = express();
@@ -19,6 +20,7 @@ app.use("/api", projectsRouter);
 app.use("/api", categoriesRouter);
 app.use("/api", technologiesRouter);
 app.use("/api", userRouter);
+app.use("/api", infoRouter);
 
 mongoose.set('strictQuery', false);
 // mongodb local
@@ -28,4 +30,4 @@ mongoose.set('strictQuery', false);
 connectOnlDB();
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
-  })
+})
