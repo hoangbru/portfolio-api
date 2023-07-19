@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import mongooseDelete from 'mongoose-delete';
 import slug from 'mongoose-slug-generator';
+import mongoosePaginate from "mongoose-paginate-v2";
 
-// projectSchema.plugin(slug);
 mongoose.plugin(slug);
 
 const projectSchema = mongoose.Schema({
@@ -59,14 +59,6 @@ projectSchema.plugin(mongooseDelete, {
     deletedAt: true,
     overrideMethods: 'all'
 })
-
-
-// projectSchema.pre("save", function(next) {
-//     this.slug = slugify(this.name, {
-//         lower: true,
-//         strinct: true,
-//     });
-//     next();
-// })
+projectSchema.plugin(mongoosePaginate);
 
 export default mongoose.model('Project', projectSchema);

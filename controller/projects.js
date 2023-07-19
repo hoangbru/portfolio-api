@@ -6,17 +6,24 @@ import { v2 as cloudinary } from "cloudinary";
 import slugify from "slugify";
 
 export const getAll = async (req, res) => {
+  const { _limit = 3, _sort = "createdAt", _order = "desc" } = req.query;
+  const options = {
+    limit: _limit,
+    sort: {
+      [_sort]: _order == "desc" ? -1 : 1,
+    },
+  };
   try {
-    const data = await Project.find().populate(
-      "technologyId categoryId",
-      "-__v"
-    );
-    if (!data) {
-      return res.status(200).json({
-        message: "Không có dự án nào",
-      });
-    }
-    return res.status(200).json(data);
+    const result = await Project.paginate(
+      { categoryId: { $ne: null } },
+      { ...options, populate: {path: "technologyId categoryId"} }
+    )
+    
+    if (result.docs.length === 0) throw new Error("Không có sản phẩm nào");
+    const response = {
+      data: result.docs
+    };
+    return res.status(200).json(response.data);
   } catch (error) {
     return res.status(400).json({
       message: error,
@@ -62,15 +69,15 @@ export const create = async (req, res) => {
         message: error.details[0].message,
       });
     }
-    
+
     // const slug = slugify(body.name, {lower:true, strict:true});
-    
+
     const data = await Project.create({
       ...body,
       thumbnail: fileData,
       // slug,
     });
-    
+
     // console.log(fileData)
     await Category.findByIdAndUpdate(data.categoryId, {
       $addToSet: {
@@ -102,7 +109,7 @@ export const create = async (req, res) => {
 
 export const remove = async (req, res) => {
   try {
-    await Project.delete({_id: req.params.id});
+    await Project.delete({ _id: req.params.id });
     return res.status(200).json({
       message: "Xoá dự án thành công",
     });
@@ -115,7 +122,7 @@ export const remove = async (req, res) => {
 
 export const forceDelete = async (req, res) => {
   try {
-    await Project.deleteOne({_id: req.params.id});
+    await Project.deleteOne({ _id: req.params.id });
     return res.status(200).json({
       message: "Xoá dự án thành công",
     });
@@ -142,10 +149,10 @@ export const update = async (req, res) => {
         message: error.details[0].message,
       });
     }
-    const slug = slugify(body.name, {lower:true, strict:true});
+    const slug = slugify(body.name, { lower: true, strict: true });
     const data = await Project.findOneAndUpdate(
       { _id: id },
-      { ...body, thumbnail: fileData , slug},
+      { ...body, thumbnail: fileData, slug },
       {
         new: true,
       }
@@ -181,7 +188,7 @@ export const update = async (req, res) => {
 
 export const restore = async (req, res) => {
   try {
-    await Project.restore({_id: req.params.id});
+    await Project.restore({ _id: req.params.id });
     return res.status(200).json({
       message: "Khôi phục dự án thành công",
     });
@@ -211,11 +218,11 @@ export const getTrash = async (req, res) => {
   }
 };
 
-export const getSlug = async(req, res) => {
-  console.log("fdfff")
+export const getSlug = async (req, res) => {
+  console.log("fdfff");
   try {
     const slug = req.params.slug;
-    const data = await Project.findOne({ slug }).populate('technologyId');
+    const data = await Project.findOne({ slug }).populate("technologyId");
     if (!data) {
       return res.status(200).json({
         message: "Không có dự án",
