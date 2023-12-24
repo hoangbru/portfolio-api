@@ -1,0 +1,212 @@
+{
+  "users": [
+    {
+      "email": "hoangbru07@gmail.com",
+      "password": "$2a$10$SbCzO7CzW5V/4iffdpp35u0NOkbKtTqQAEOFrn4iTb9dG8nR4wYdW",
+      "account": "admin",
+      "role": 1,
+      "createdAt": "2023-12-23T20:48:56.676Z",
+      "updatedAt": "2023-12-23T20:48:56.676Z",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "name": "sdg",
+      "email": "sad@gmail.com",
+      "message": "sret",
+      "createdAt": "2023-12-01T19:13:18.666Z",
+      "updatedAt": "2023-12-01T19:13:18.666Z",
+      "id": 1
+    },
+    {
+      "name": "arew",
+      "email": "as@gmail.com",
+      "message": "sd",
+      "createdAt": "2023-12-01T19:13:53.152Z",
+      "updatedAt": "2023-12-01T19:13:53.152Z",
+      "id": 2
+    },
+    {
+      "name": "as",
+      "email": "asjh@gmail.com",
+      "message": "qr",
+      "createdAt": "2023-12-01T19:15:17.259Z",
+      "updatedAt": "2023-12-01T19:15:17.259Z",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Paper",
+      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701428865/portfolio/oeqbuzgfesqjhq2oecur.png",
+      "description": "Realtime chat app",
+      "link": "https://dotpaper.vercel.app",
+      "linkGithub": "https://github.com/hoangbru/paper",
+      "technologies": [
+        {
+          "id": 4,
+          "name": "Nextjs"
+        },
+        {
+          "id": 5,
+          "name": "Taliwind CSS",
+          "tag": "tailwind-css"
+        },
+        {
+          "id": 6,
+          "name": "Typescript",
+          "tag": "typescript"
+        }
+      ],
+      "createdAt": "2023-11-30T08:37:38.199Z",
+      "updatedAt": "2023-12-01T19:49:39.771Z"
+    },
+    {
+      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701429589/portfolio/j4bjbrr2uatwureeo64e.png",
+      "name": "Spotify Clone",
+      "link": "https://dotspotify.vercel.app/",
+      "linkGithub": "https://github.com/hoangbru/spotify-clone",
+      "technologies": [
+        {
+          "id": 4,
+          "name": "Nextjs"
+        },
+        {
+          "id": 5,
+          "name": "Taliwind CSS",
+          "tag": "tailwind-css"
+        },
+        {
+          "id": 6,
+          "name": "Typescript",
+          "tag": "typescript"
+        },
+        {
+          "id": 7,
+          "name": "Postgresql",
+          "tag": "postgresql"
+        }
+      ],
+      "createdAt": "2023-11-30T10:05:12.242Z",
+      "updatedAt": "2023-12-01T16:20:56.594Z",
+      "id": 2,
+      "description": "Developed based on Spotify, streaming music online, using Next.js 13x technology, and Supabase."
+    }
+  ],
+  "technologies": [
+    {
+      "id": 1,
+      "name": "Javascript",
+      "tag": "javascript",
+      "createdAt": "2023-11-01T13:10:20.540Z",
+      "updatedAt": "2023-11-01T13:10:20.540Z"
+    },
+    {
+      "id": 2,
+      "name": "HTML",
+      "tag": "html5",
+      "createdAt": "2023-11-30T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:51:31.689Z"
+    },
+    {
+      "id": 3,
+      "name": "CSS",
+      "tag": "css3",
+      "createdAt": "2023-12-01T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:10:20.540Z"
+    },
+    {
+      "id": 4,
+      "name": "Nextjs",
+      "createdAt": "2023-12-01T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:10:20.540Z"
+    },
+    {
+      "id": 6,
+      "name": "Typescript",
+      "tag": "typescript",
+      "createdAt": "2023-12-01T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:10:20.540Z"
+    },
+    {
+      "id": 7,
+      "name": "Postgresql",
+      "tag": "postgresql",
+      "createdAt": "2023-12-01T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:10:20.540Z"
+    },
+    {
+      "name": "Docker",
+      "tag": "docker",
+      "createdAt": "2023-12-01T13:10:20.540Z",
+      "updatedAt": "2023-12-01T13:10:20.540Z",
+      "id": 8
+    },
+    {
+      "name": "MongoDB",
+      "tag": "mongodb",
+      "createdAt": "2023-12-01T13:11:02.330Z",
+      "updatedAt": "2023-12-01T13:11:02.330Z",
+      "id": 9
+    },
+    {
+      "name": "PHP",
+      "tag": "php",
+      "createdAt": "2023-12-01T13:52:58.094Z",
+      "updatedAt": "2023-12-01T13:52:58.094Z",
+      "id": 10
+    }
+  ],
+  "info": [
+    {
+      "id": 1,
+      "nickname": "Rechideep",
+      "email": "viethoangpham25@gmail.com",
+      "github": "https://github.com/hoangbru",
+      "introduce": "Front-end web dev from Hanoi",
+      "avatar": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701448994/portfolio/wtpliusprsjmq6fq4aa2.jpg",
+      "fullname": "Phạm Việt Hoàng",
+      "education": "FPT Polytechnic Hanoi College",
+      "location": "Hanoi, Vietnam",
+      "overview": "Hello, I am a student at FPT Polytechnic. I am currently studying and developing myself in this professional learning environment. I love technology and always seek opportunities to learn more about new technologies and develop my skills. I am also an active person and enjoy participating in social activities at school such as clubs, volunteer teams, or cultural and artistic activities",
+      "createdAt": "",
+      "updatedAt": "2023-12-01T19:45:04.901Z",
+      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701448994/portfolio/wtpliusprsjmq6fq4aa2.jpg"
+    }
+  ],
+  "externals": [
+    {
+      "id": 2,
+      "path": "https://www.facebook.com/akachihale",
+      "name": "Facebook",
+      "icon": "facebook",
+      "updatedAt": "2023-12-01T19:31:02.017Z"
+    },
+    {
+      "name": "Instagram",
+      "path": "https://www.instagram.com/tatakemichi",
+      "icon": "instagram",
+      "createdAt": "2023-12-01T17:02:45.421Z",
+      "updatedAt": "2023-12-01T17:02:45.421Z",
+      "id": 3
+    },
+    {
+      "name": "Tiktok",
+      "path": "https://www.tiktok.com/@ohhvithoang?lang=vi-VN",
+      "icon": "tiktok",
+      "createdAt": "2023-12-01T17:05:22.187Z",
+      "updatedAt": "2023-12-01T17:10:58.019Z",
+      "id": 4
+    },
+    {
+      "name": "Telegram",
+      "path": "https://web.telegram.org/a",
+      "icon": "telegram",
+      "createdAt": "2023-12-01T19:34:39.641Z",
+      "updatedAt": "2023-12-01T19:34:39.641Z",
+      "id": 5
+    }
+  ]
+}
