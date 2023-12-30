@@ -93,6 +93,46 @@
       "updatedAt": "2023-12-01T16:20:56.594Z",
       "id": 2,
       "description": "Developed based on Spotify, streaming music online, using Next.js 13x technology, and Supabase."
+    },
+    {
+      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1703925261/portfolio/wqw6b3mrxnlzapsfucpe.png",
+      "name": "easyFood",
+      "link": "https://easyfood.firebbq.id.vn/",
+      "linkGithub": "",
+      "description": "Graduation project with the participation of 7 team members, focusing on the development of an automated food ordering system named easyFood. The system enables automatic menu selection through QR codes. React + Typescript + Redux Toolkit is employed for the front-end, and PHP (Laravel framework) + MySQL is used for the back-end",
+      "technologies": [
+        {
+          "id": 6,
+          "name": "Typescript",
+          "tag": "typescript",
+          "createdAt": "2023-12-01T13:10:20.540Z",
+          "updatedAt": "2023-12-01T13:10:20.540Z"
+        },
+        {
+          "name": "React",
+          "tag": "react",
+          "createdAt": "2023-12-30T08:35:17.416Z",
+          "updatedAt": "2023-12-30T08:35:17.416Z",
+          "id": 12
+        },
+        {
+          "name": "Redux",
+          "tag": "redux",
+          "createdAt": "2023-12-30T08:35:06.316Z",
+          "updatedAt": "2023-12-30T08:35:06.317Z",
+          "id": 11
+        },
+        {
+          "name": "PHP",
+          "tag": "php",
+          "createdAt": "2023-12-01T13:52:58.094Z",
+          "updatedAt": "2023-12-01T13:52:58.094Z",
+          "id": 10
+        }
+      ],
+      "createdAt": "2023-12-30T08:34:58.745Z",
+      "updatedAt": "2023-12-30T08:35:31.132Z",
+      "id": 3
     }
   ],
   "technologies": [
@@ -157,12 +197,26 @@
       "createdAt": "2023-12-01T13:52:58.094Z",
       "updatedAt": "2023-12-01T13:52:58.094Z",
       "id": 10
+    },
+    {
+      "name": "Redux",
+      "tag": "redux",
+      "createdAt": "2023-12-30T08:35:06.316Z",
+      "updatedAt": "2023-12-30T08:35:06.317Z",
+      "id": 11
+    },
+    {
+      "name": "React",
+      "tag": "react",
+      "createdAt": "2023-12-30T08:35:17.416Z",
+      "updatedAt": "2023-12-30T08:35:17.416Z",
+      "id": 12
     }
   ],
   "info": [
     {
       "id": 1,
-      "nickname": "Rechideep",
+      "nickname": "chisync",
       "email": "viethoangpham25@gmail.com",
       "github": "https://github.com/hoangbru",
       "introduce": "Front-end web dev from Hanoi",
@@ -172,8 +226,9 @@
       "location": "Hanoi, Vietnam",
       "overview": "Hello, I am a student at FPT Polytechnic. I am currently studying and developing myself in this professional learning environment. I love technology and always seek opportunities to learn more about new technologies and develop my skills. I am also an active person and enjoy participating in social activities at school such as clubs, volunteer teams, or cultural and artistic activities",
       "createdAt": "",
-      "updatedAt": "2023-12-01T19:45:04.901Z",
-      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701448994/portfolio/wtpliusprsjmq6fq4aa2.jpg"
+      "updatedAt": "2023-12-30T08:33:59.086Z",
+      "image": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1701448994/portfolio/wtpliusprsjmq6fq4aa2.jpg",
+      "thumbnail": "https://res.cloudinary.com/ddbdu6zip/image/upload/v1703925236/portfolio/cne30kcdtcqeyprhzkvc.jpg"
     }
   ],
   "externals": [
